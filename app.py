@@ -4,7 +4,7 @@ import string
 from nltk.corpus import stopwords
 import nltk
 from nltk.stem.porter import PorterStemmer
-
+from stopwords import words
 ps = PorterStemmer()
 
 
@@ -21,7 +21,7 @@ def transform_text(text):
     y.clear()
 
     for i in text:
-        if i not in stopwords.words('english') and i not in string.punctuation:
+        if i not in words and i not in string.punctuation:
             y.append(i)
 
     text = y[:]
