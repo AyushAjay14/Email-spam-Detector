@@ -2,3 +2,4 @@ nltk
 scikit-learn
 flask
 scipy
+gunicorn==20.1.0
